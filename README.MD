@@ -99,7 +99,7 @@ systemctl restart nodeserver.service
 
 ## Testing if the application is able to reload
 
-Now finally we can test how systemd restarts the process if it unexpectedly dies (thanks Mark for the suggestion). We will manually "kill" the running process by finding its Process ID (pid), and note how systemd automatically restart it again:
+Now finally we can test how systemd restarts the process if it unexpectedly dies . We will manually "kill" the running process by finding its Process ID (pid), and note how systemd automatically restart it again:
 
 ```
 ps -ef | grep server.js     # find the current pid
